@@ -82,6 +82,7 @@ typedef enum {
     LOGIC_CONDITION_DELTA                       = 50,
     LOGIC_CONDITION_APPROX_EQUAL                = 51,
     LOGIC_CONDITION_LAST                        = 52,
+
 } logicOperation_e;
 
 typedef enum logicOperandType_s {
@@ -135,6 +136,7 @@ typedef enum {
     LOGIC_CONDITION_OPERAND_FLIGHT_AGL_STATUS, //0,1,2                      // 35
     LOGIC_CONDITION_OPERAND_FLIGHT_AGL, //0,1,2                             // 36
     LOGIC_CONDITION_OPERAND_FLIGHT_RANGEFINDER_RAW, //int                   // 37
+    LOGIC_CONDITION_OPERAND_FLIGHT_HEADING                                             //38
 } logicFlightOperands_e;
 
 typedef enum {

@@ -734,6 +734,10 @@ static int logicConditionGetFlightOperandValue(int operand) {
             return (failsafePhase() != FAILSAFE_IDLE) ? 1 : 0;
             break;
         
+        case LOGIC_CONDITION_OPERAND_FLIGHT_HEADING:
+            return DECIDEGREES_TO_DEGREES(attitude.values.yaw) ;
+        break;
+
         case LOGIC_CONDITION_OPERAND_FLIGHT_STABILIZED_YAW: // 
             return axisPID[YAW];
             break;
